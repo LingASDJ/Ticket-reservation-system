@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="248.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx.card.car.UserLoginColltroller">
+   <!--账号控件-->
+   <Text layoutX="43.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="账号：" textAlignment="JUSTIFY">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Text>
+   <TextField layoutX="128.0" layoutY="41.0" fx:id="account" onMouseClicked="#checkLogin"/>
+   <Text layoutX="43.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="密码：">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Text>
+   <PasswordField layoutX="128.0" layoutY="87.0" fx:id="password" onMouseClicked="#checkLogin"/>
+
+   <Label fx:id="checkLogin" layoutX="96.0" layoutY="121.0" />
+   <Button layoutX="50.0" layoutY="145.0" onAction="#loginSuccess" prefHeight="41.0" prefWidth="179.0" text="登录" />
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
